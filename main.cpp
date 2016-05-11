@@ -18,7 +18,7 @@ int main() {
 		<< "nomirror rotate by -45" << std::endl;
 	gp << "set grid y" << std::endl;
 	gp << "set ylabel 'Time for one operation, nanoseconds'" << std::endl;
-	gp << "plot" << gp.file1d(investigation_2) << "using 2 title 'Entirely', '' using 3 title 'Partially'"  << std::endl;
+	gp << "plot" << gp.file1d(investigation_2) << "using 2 title 'Partially', '' using 3 title 'Entirely'"  << std::endl;
 
 /*	std::vector<std::vector<double>> investigation_3 = CTest::test<SHalfCacheLine, SOneCacheLine>(&hcl_1, &hcl_2, &ocl_1, &ocl_2);
 	gp << "set title 'Two atomic variables are in the same or in different cache lines'" << std::endl;
